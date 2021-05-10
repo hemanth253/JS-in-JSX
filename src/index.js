@@ -19,6 +19,14 @@ function GetFun2(props) {
   return props.name;
 }
 
+function Fun3() {
+  console.log("Called Fun3");
+}
+
+function Fun4() {
+  return "Called Fun4";
+}
+
 const count = 0;
 
 const obj = {
@@ -41,6 +49,10 @@ ReactDOM.render(
     <div>{obj.name}</div>
     <div>{obj.roll}</div>
     <div>{arr}</div>
+    {count + 1}
+    {Fun3()}
+    {/* {Fun3} */}
+    {Fun4()}
   </div>,
   document.getElementById("root")
 );
